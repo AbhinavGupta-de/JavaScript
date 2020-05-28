@@ -1,0 +1,96 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript on Steroids</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <script src="static/js/script.js"></script>
+  </head>
+  <body>
+    <div class="container-1">
+      <h2>Challenge 1: Your age in Days.</h2>
+      <div class="flex-box-container-1">
+        <div>
+          <button class="btn btn-primary" onclick="ageInDays()">
+            Click me
+          </button>
+        </div>
+
+        <div>
+          <button class="btn btn-danger" onclick="reset()">Reset</button>
+        </div>
+      </div>
+
+      <div>
+        <div id="flex-box-result"></div>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <h2>Challenge 2: Cat Generator</h2>
+      <button
+        class="btn btn-success"
+        id="cat-generator"
+        onclick="catGenerator()"
+      >
+        Generate Cat
+      </button>
+      <div class="flex-box-container-2" id="cat-gen"></div>
+    </div>
+
+    <div class="container-3">
+      <h2>Challenge 3: Rock Paper Scissors</h2>
+
+      <div class="flex-box-rps" id="fles-box-rps-div">
+        <img
+          src="https://cdn3.vectorstock.com/i/1000x1000/78/92/isometric-cartoon-rock-slab-with-grass-tileset-vector-15027892.jpg"
+          alt="Rock Image"
+          height="150px"
+          width="140px"
+          id="rock"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="https://image.shutterstock.com/image-vector/two-blank-paper-cartoon-vector-260nw-326072252.jpg"
+          alt="Paper Image"
+          height="150px"
+          width="140px"
+          id="paper"
+          onclick="rpsGame(this)"
+        />
+        <img
+          src="https://cdn3.vectorstock.com/i/1000x1000/36/57/scissors-cartoon-vector-21843657.jpg"
+          alt="Scissors Image"
+          height="150px"
+          width="140px"
+          id="scissors"
+          onclick="rpsGame(this)"
+        />
+      </div>
+    </div>
+    <div class="container-4">
+      <h2 id="Color-Changer">Challenge 4: Change the Color of all the buttons</h2>  
+      <div class="flex-box-button-color-changer">
+          <form action="">
+              <select name="backdrop" id="background" onchange="chageTheColorOfButton(this)">
+                <option value="Random">Random</option>
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+                <option value="Green">Green</option>
+                <option value="Reset">Reset</option>
+              </select>
+          </form>
+          <button class="btn btn-primary">Wee!</button>
+          <button class="btn btn-danger">Yehee!</button>
+          <button class="btn btn-success">Hi!</button>
+          <button class="btn btn-warning">Bye!</button>
+      </div>
+    </div>
+  </body>
+</html>
