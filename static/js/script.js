@@ -51,7 +51,7 @@ function messageDisplayer(message, userChoice, botChoice) {
   } else if (message == "You Won!") {
     colorOfResult = "green";
   } else {
-    colorOfResult = "yello";
+    colorOfResult = "yellow";
   }
 
   humanDiv.innerHTML =
@@ -137,11 +137,9 @@ function resultDecider(userChoice, botChoice) {
   }
 }
 
-//Challenge 4
+// Challenge 4
+var blackjackGame = {
+  you: { spanScore: "your-score" },
+};
 
-var all_buttons = document.getElementsByTagName('button');
-console.log(all_buttons);
-
-function chageTheColorOfButton(userChoice){
-  
-}
+function blackjackHit() {}

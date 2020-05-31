@@ -75,21 +75,56 @@
       </div>
     </div>
     <div class="container-4">
-      <h2 id="Color-Changer">Challenge 4: Change the Color of all the buttons</h2>  
-      <div class="flex-box-button-color-changer">
-          <form action="">
-              <select name="backdrop" id="background" onchange="chageTheColorOfButton(this)">
-                <option value="Random">Random</option>
-                <option value="Red">Red</option>
-                <option value="Blue">Blue</option>
-                <option value="Green">Green</option>
-                <option value="Reset">Reset</option>
-              </select>
-          </form>
-          <button class="btn btn-primary">Wee!</button>
-          <button class="btn btn-danger">Yehee!</button>
-          <button class="btn btn-success">Hi!</button>
-          <button class="btn btn-warning">Bye!</button>
+      <h2 id="BlackJack">Challenge 4: BlackJack</h2>
+      <h3><span id="blackjack-result">Let's Play</span></h3>
+
+      <div class="flex-blackjack-row-1">
+        <div id="player-box">
+          <h2>You: <span id="your-score">0</span></h2>
+        </div>
+
+        <div id="dealer-box">
+          <h2>Dealer: <span id="dealer-score">0</span></h2>
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button
+            class="btn-lg btn-primary mr-2"
+            id="blackjack-hit-button"
+            onclick="blackjackHit()"
+          >
+            Hit
+          </button>
+          <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">
+            Stand
+          </button>
+          <button class="btn-lg btn-danger mr-2" id="blackjack-Deal-button">
+            Deal
+          </button>
+          <a
+            href="https://www.youtube.com/watch?v=-9YGKFdP6sY"
+            class="btn-lg btn btn-success"
+            >How to Play</a
+          >
+        </div>
+      </div>
+
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Losses</th>
+            <th>Draws</th>
+          </tr>
+
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="draws">0</span></td>
+          </tr>
+        </table>
       </div>
     </div>
   </body>
