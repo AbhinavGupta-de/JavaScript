@@ -80,11 +80,11 @@
 
       <div class="flex-blackjack-row-1">
         <div id="player-box">
-          <h2>You: <span id="your-score">0</span></h2>
+          <h2>You: <span id="PLAYER-score">0</span></h2>
         </div>
 
         <div id="dealer-box">
-          <h2>Dealer: <span id="dealer-score">0</span></h2>
+          <h2>Dealer: <span id="DEALER-score">0</span></h2>
         </div>
       </div>
 
@@ -97,10 +97,14 @@
           >
             Hit
           </button>
-          <button class="btn-lg btn-warning mr-2" id="blackjack-stand-button">
+          <button class="btn-lg btn-warning mr-2" onclick="dealerLogic()">
             Stand
           </button>
-          <button class="btn-lg btn-danger mr-2" id="blackjack-Deal-button">
+          <button
+            class="btn-lg btn-danger mr-2"
+            id="blackjack-Deal-button"
+            onclick="blackjackDeal()"
+          >
             Deal
           </button>
           <a
